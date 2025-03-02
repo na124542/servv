@@ -1,0 +1,360 @@
+:root{
+    --color-primary: #4caf50;
+    --color-primary-dark: #2e7d32;
+    --color-primary-darker: #1b5e20;
+    --color-secondary: #2e4924;
+    --color-background: #fff;
+    --color-background-header:#caf5cb;
+    --color-background-light: #f8faf8;
+    --color-accent-light: #e8f5e9;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-border: #ddd;
+    --border-radius-lg: 15px;
+    --box-shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.596);
+    --transition-default: all 0.8s ease;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+}
+header{
+    display: flex;
+    align-items: center;
+
+}
+
+.container-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-background-header);
+
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.imag-logo img{
+        margin-left: 20px;
+        width: 65px;
+        height: 65px;
+        object-fit: contain;  
+}
+
+.text-logo{
+    display: flex;
+    flex-direction: column;
+}
+.text-logo span:first-letter {
+    color: var(--color-primary);
+}
+
+.text-logo{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+
+}
+
+.container-user{ 
+    display: flex;
+    align-items: center;
+     justify-content: end;
+     gap: 10px;
+     margin-right: 10px;
+}
+
+.image-user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain; 
+   
+}
+
+.title-service{
+   
+    text-shadow: var(--box-shadow-lg);
+    color: var(--color-secondary);
+
+}
+
+.username{
+    color: var(--color-secondary);
+
+}
+
+/*-------------------------------------start service section-----------------------------------------------------------------------*/
+section{
+  height: 500px; 
+  margin-bottom: 30px; 
+}
+
+.service-container{
+    position: relative;
+    top: 80px;
+    left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card{
+    box-shadow: var(--box-shadow-lg);
+    width: 450px;
+    height: 180px;
+    background-color: var(--color-background-header);
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius-lg);
+}
+
+.service-image img{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.service-details h3{
+    margin:10px;
+    color: var(--color-text);
+    text-align: center;
+}
+.service-details p{
+    font-size: 0.83rem;
+    color: var(--color-text-light);
+    margin-bottom: 10px;
+
+}
+.end-of-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.price-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.service-card .price {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.price-service span {
+    font-size: 0.80rem;
+}
+.service-card button {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    padding: 0.9rem 1rem;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    transition: var(--transition-default);
+    font-weight: 500;
+    width:100px;
+}
+.service-card button:hover {
+    background-color: var(--color-primary-darker);
+    transform: scale(1.05);
+}
+/*------------------------------------top services---------------------------------------------------------------*/
+
+.continer-top-services{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #E9F8E8;
+    padding: 40px;
+    
+}
+.top-service-card{
+    box-shadow: var(--box-shadow-lg);
+    border:  var(--color-primary) solid;
+    border-radius: var(--border-radius-lg);
+    height: 230px;
+}
+
+.container-card{
+    gap: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.img-top-ser img {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    object-fit: cover;
+}
+.text-top-ser h4{
+    margin-top: 10px;
+}
+.text-top-ser p{
+    font-size: 0.83rem;
+    color: var(--color-text-light);
+    margin-bottom: 10px;
+}
+.experience{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+}
+.rate{
+
+    margin: 10px;
+}
+
+.service-rate{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}
+.click-btn{
+background-color: var(--color-primary);
+color: var(--color-background);
+border: none;
+height: 40px;
+width: 80%;
+margin-left: 10%;
+border-radius: var(--border-radius-lg);
+cursor: pointer;
+transition:  var(--transition-default)
+}
+
+.click-btn:hover{
+    transform: scale(1.08);
+    transition: var(--transition-default);
+    background-color: var(--color-primary-darker);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 452px) {
+    
+    section{
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+   
+    header{
+        width: 512px;
+    }
+    .container-logo{
+        margin-left: 0;
+    }
+    .imag-logo img{
+        width: 55px;
+        height: 55px;
+    }
+    .text-logo{
+        font-size: 14px;
+    }
+    .title-service{
+        
+        margin-left:5px ;
+        font-size: 9px;
+
+    }
+    .service-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+    }
+    .container-user{
+        gap: 1px;
+        margin-right: 1px;
+
+    }
+    .image-user img{
+        width: 35px;
+        height: 35px;
+    }
+    .username{
+        font-size: 12px;
+    }
+
+   
+    .service-card{
+        width: 370px;
+        height: 200px;
+
+    }
+    .service-image img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+    .service-card button {
+        width: 80px;
+    }
+    .service-details{
+        padding: 5px;
+
+    }
+    .continer-top-services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1300px;
+        width: 512px;
+    }
+    
+    
+    .top-service-card{
+         width: 320px;
+         height: 300px;
+    }
+    .service-rate{
+      display: flex;
+      justify-content: center;
+    }
+
+}
+
+
